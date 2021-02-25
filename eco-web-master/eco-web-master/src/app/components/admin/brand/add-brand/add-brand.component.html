@@ -6,11 +6,10 @@
 				<div class="col-md-6 mx-auto">
 					<div class="card border-secondary">
 						<div class="card-header">
-							<h3 class="mb-0 my-2">Brand form</h3>
+							<h3 class="mb-0 my-2">Ville form</h3>
 						</div>
 						<div class="card-body">
 							<form #f="ngForm" >
-								
 								<div>
 									<div class="form-group">
 										<label>Code</label>
@@ -22,8 +21,8 @@
 										<input required class="form-control" type="text" name="label" [(ngModel)]="brand.label"/>
 									</div>
 									<div class="form-group">
-										<button class="btn btn-success" [disabled]="f.invalid" (click)="saveBrand()">Save Brand</button>
-										<button type="reset" class="btn btn-default" routerLink="/admin/brands">Cancel</button>
+										<button class="btn btn-success" [disabled]="f.invalid" (click)="saveBrand()">Save Ville</button>
+										<button type="reset" class="btn btn-default" routerLink="/admin/villes">Cancel</button>
 									</div>
 
 								</div>

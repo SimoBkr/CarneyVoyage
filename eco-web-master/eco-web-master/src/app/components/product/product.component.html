@@ -10,7 +10,7 @@
                 <label><strong>Label: </strong></label>
               </td>
               <td>
-                <input type="text" placeholder="Product name" [(ngModel)]="productSearchDto.productLabel" class="form-control">
+                <input type="text" placeholder="Activity name" [(ngModel)]="productSearchDto.productLabel" class="form-control">
               </td>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
             </tr>
             <tr>
               <td>
-                <label><strong>Brand: </strong></label>
+                <label><strong>Ville: </strong></label>
               </td>
               <td>
                 <span class="form-group" *ngFor="let brand of brands">
@@ -60,15 +60,15 @@
               class="card" style="width: 15rem;">
               <a class="product-label-anchor" [routerLink]="['/product/details/', p.id]">
                 <img *ngIf="p.mainImage" src="data:image/jpeg;base64,{{p.mainImage.content}}" alt="Product image" class="card-img-top">
-                <img *ngIf="!p.mainImage" src="../../../assets/img/image-not-found.jpg" alt="Product image" class="card-img-top">
+                <!--<img *ngIf="!p.mainImage" src="../../../assets/img/image-not-found.jpg" alt="Product image" class="card-img-top">-->
               </a>
                 <div class="card-body">
                 <h4 class="card-title">
                   <a class="product-label-anchor" [routerLink]="['/product/details/', p.id]">{{p.label}}</a>
                 </h4>
                 <p class="card-text price-text">{{p.price  | currency:'USD':'symbol-narrow'}}</p>
-                <p class="card-text stock-quantity-text" [ngClass]="p.qteStock > 100 ? '': 'not-much-left'">{{p.qteStock}} in stock</p>
-                <button class="btn btn-success" [routerLink]="['/product/details/', p.id]">View</button>
+                <p class="card-text stock-quantity-text" [ngClass]="p.qteStock > 100 ? '': 'not-much-left'">{{p.qteStock}} sejours</p>
+                <button class="btn btn-success" [routerLink]="['/activitie/details/', p.id]">View</button>
                 <button class="btn btn-primary" [disabled]="p.unavailable" (click)="addToCart(p)">Add to cart</button>
                 <br>
                 <span class="alert-unavailable" *ngIf="p.unavailable">* You cannot have more than {{p.qteStock}} items in your shopping cart</span>

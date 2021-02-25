@@ -3,16 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h5>Products list</h5>
+          <h5>Activity list</h5>
         </div>
         <div class="col">
           <h5>Price</h5>
         </div>
         <div class="col">
-          <h5>Quantity</h5>
+          <h5>Repetition</h5>
         </div>
         <div class="col">
-          <h5>P * Q</h5>
+          <h5>P * R</h5>
         </div>
         <div class="col-2"></div>
       </div>
@@ -43,16 +43,16 @@
       <h4 class="total-price">Total Price : {{totalPrice | currency:'USD':'symbol-narrow'}}</h4>
     </div>
     <div class="container">
-      <button class="btn btn-primary" routerLink="/products">Continue shopping</button>
+      <button class="btn btn-primary" routerLink="/activities">Continue shopping</button>
     </div>
   </div>
   <div *ngIf="cartProducts.length === 0" class="container">
     <h3 align="center"> Cart empty </h3>
-    <button class="btn btn-primary" routerLink="/products">Do some shopping ?</button>
+    <button class="btn btn-primary" routerLink="/activities">Do some shopping ?</button>
   </div>
 
   <div *ngIf="cartProducts.length !== 0" class="container">
     <!--<button class="btn btn-success float-right" (click)="checkout()">Checkout</button>-->
-    <a href="https://wa.me/+212617445063"><button class="btn btn-success float-right">Order Via Whatsapp</button></a>
+    <a href="https://wa.me/+212617445063"><button class="btn btn-success float-right">Contact Admin vie whatsapp to confirm your Programme</button></a>
   </div>
 </div>

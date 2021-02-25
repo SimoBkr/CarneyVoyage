@@ -1,5 +1,5 @@
 <div class="custom-container">
-	<button class="btn btn-primary" routerLink="/admin/products/form">Add new product</button>
+	<button class="btn btn-primary" routerLink="/admin/activities/form">Add new product</button>
 
 
 	<data-table
@@ -37,8 +37,8 @@
 		</data-table-column>
 
 		<data-table-column
-			[property] = "'qteStock'"
-			[header] = "'Store quantity'"
+			[property] = "'Sejours'"
+			[header] = "'Sejour Activity'"
 			[sortable] = "true"
 			[resizable] = "true"
 		>
@@ -56,7 +56,7 @@
 		</data-table-column>
 
 		<data-table-column
-			[header] = "'Brand'"
+			[header] = "'Ville'"
 			[sortable] = "true"
 			[resizable] = "true"
 		>
@@ -68,7 +68,7 @@
 
 		<data-table-column>
 			<ng-template #dataTableCell let-item="item">
-				<a [routerLink]="['/admin/products/', item.id]">
+				<a [routerLink]="['/admin/activities/', item.id]">
 					<i class="fa fa-edit"></i>
 				</a>&nbsp;&nbsp;&nbsp;&nbsp;
 				<a style="color:red" (click)="deleteProduct(item.id)">

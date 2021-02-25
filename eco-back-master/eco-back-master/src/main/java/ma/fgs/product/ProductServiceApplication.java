@@ -5,7 +5,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import ma.fgs.product.domain.Account;
 import ma.fgs.product.domain.Role;
+import ma.fgs.product.repository.AccountRepository;
 import ma.fgs.product.repository.RoleRepository;
 
 @SpringBootApplication

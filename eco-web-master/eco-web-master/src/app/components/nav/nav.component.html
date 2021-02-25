@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+            <a class="nav-link" routerLink="/activities" routerLinkActive="active">Activitys</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" routerLink="/contactus" routerLinkActive="active">Contact-us</a>
@@ -20,9 +20,9 @@
             <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" routerLink="/cart" >Cart</a>
               <a class="dropdown-item" routerLink="admin/users" *ngIf="authService.isAdmin()">Manage users</a>
-              <a class="dropdown-item" routerLink="admin/products" *ngIf="authService.isAdmin()">Manage products</a>
-              <a class="dropdown-item" routerLink="admin/brands" *ngIf="authService.isAdmin()">Manage brands</a>
-              <a class="dropdown-item" routerLink="admin/categories" *ngIf="authService.isAdmin()">Manage categories</a>
+              <a class="dropdown-item" routerLink="admin/activities" *ngIf="authService.isAdmin()">Manage activitys</a>
+              <a class="dropdown-item" routerLink="admin/villes" *ngIf="authService.isAdmin()">Manage Villes</a>
+              <a class="dropdown-item" routerLink="admin/domaines" *ngIf="authService.isAdmin()">Manage domaine Activity</a>
               <a class="dropdown-item"
                 *ngIf="authService.isLoggedIn()" 
                 (click)="onLogout(registerTemplate)">

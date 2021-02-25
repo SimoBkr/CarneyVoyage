@@ -25,7 +25,7 @@ export class CategoryFormComponent implements OnInit {
   
 	saveCategory() {
 		this.categoryService.saveCategory(this.category).subscribe(result => {
-			this.toastr.success('Category created');
+			this.toastr.success('Domaine created');
 			this.router.navigate(['/admin/categories']);
 		}, error => {
 			this.toastr.error(String(error));
