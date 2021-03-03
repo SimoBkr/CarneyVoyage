@@ -58,13 +58,14 @@
           <div class="col product-item">
             <div
               class="card" style="width: 15rem;">
+           
               <a class="product-label-anchor" [routerLink]="['/product/details/', p.id]">
                 <img *ngIf="p.mainImage" src="data:image/jpeg;base64,{{p.mainImage.content}}" alt="Product image" class="card-img-top">
-                <!--<img *ngIf="!p.mainImage" src="../../../assets/img/image-not-found.jpg" alt="Product image" class="card-img-top">-->
+                <img *ngIf="!p.mainImage" src="../../../assets/img/image-not-found.jpg" alt="Product image" class="card-img-top">
               </a>
                 <div class="card-body">
                 <h4 class="card-title">
-                  <a class="product-label-anchor" [routerLink]="['/product/details/', p.id]">{{p.label}}</a>
+                  <a class="product-label-anchor" [routerLink]="['/activitie/details/', p.id]">{{p.label}}</a>
                 </h4>
                 <p class="card-text price-text">{{p.price  | currency:'USD':'symbol-narrow'}}</p>
                 <p class="card-text stock-quantity-text" [ngClass]="p.qteStock > 100 ? '': 'not-much-left'">{{p.qteStock}} sejours</p>

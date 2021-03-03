@@ -49,8 +49,8 @@ export class AddProductComponent implements OnInit {
 
 	saveProduct(){
 		this.productService.addProduct(this.product).subscribe(result => {
-			this.toastr.success('Product added successfully !');
-			this.router.navigate(['/admin/products']);
+			this.toastr.success('Activity added successfully !');
+			this.router.navigate(['/admin/activities']);
 		});
 	}
 

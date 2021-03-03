@@ -28,7 +28,7 @@ export class AddBrandComponent implements OnInit {
 	saveBrand() {
 		this.brandService.saveBrand(this.brand).subscribe(result => {
 			this.toastr.success('Brand created');
-			this.router.navigate(['/admin/brands']);
+			this.router.navigate(['/admin/villes']);
 		}, error => {
 			this.toastr.error(String(error));
 		})

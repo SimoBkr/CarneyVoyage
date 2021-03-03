@@ -43,12 +43,12 @@
       <h4 class="total-price">Total Price : {{totalPrice | currency:'USD':'symbol-narrow'}}</h4>
     </div>
     <div class="container">
-      <button class="btn btn-primary" routerLink="/activities">Continue shopping</button>
+      <button class="btn btn-primary" routerLink="/activities">Continue to reserve</button>
     </div>
   </div>
   <div *ngIf="cartProducts.length === 0" class="container">
     <h3 align="center"> Cart empty </h3>
-    <button class="btn btn-primary" routerLink="/activities">Do some shopping ?</button>
+    <button class="btn btn-primary" routerLink="/activities">Do some reserve ?</button>
   </div>
 
   <div *ngIf="cartProducts.length !== 0" class="container">
