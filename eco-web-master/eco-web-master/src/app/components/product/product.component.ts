@@ -58,7 +58,7 @@ export class ProductComponent implements OnInit {
   addToCart(product) {
     let username:string = this.authService.getConnectedUsername();
     this.productService.addProductToCart(product, username).subscribe(result => {
-      this.toastr.success("Product added to cart");
+      this.toastr.success("Activitie added to cart");
       this.products.forEach(p => {
         this.cartService.loadCart(username).subscribe((cart: any) => {
           cart.products.forEach(cartProduct => {

@@ -59,7 +59,7 @@
             <div
               class="card" style="width: 15rem;">
            
-              <a class="product-label-anchor" [routerLink]="['/product/details/', p.id]">
+              <a class="product-label-anchor" [routerLink]="['/activitie/details/', p.id]">
                 <img *ngIf="p.mainImage" src="data:image/jpeg;base64,{{p.mainImage.content}}" alt="Product image" class="card-img-top">
                 <img *ngIf="!p.mainImage" src="../../../assets/img/image-not-found.jpg" alt="Product image" class="card-img-top">
               </a>
